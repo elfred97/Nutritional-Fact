@@ -19,7 +19,7 @@ function App() {
     try {
       const response = await axios.get('https://api.api-ninjas.com/v1/nutrition?query=' + food_item, {
         headers: {
-          'X-Api-Key': '6t4IY9bVUmWRpbii3J9kS1yZtBvrvlpUQRoMgwFk'
+          'X-Api-Key': 'YOUR_API_KEY' // Sign up for your own API key at https://api-ninjas.com/ and replace the value here
         }
       })
     
