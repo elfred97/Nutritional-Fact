@@ -7,8 +7,8 @@ const axiosClient = axios.create({
 });
 
 axiosClient.interceptors.request.use((config)=> {
-    // const token = localStorage.getItem('ACCESS_TOKEN');
-    const token = '6t4IY9bVUmWRpbii3J9kS1yZtBvrvlpUQRoMgwFk';
+    const token = localStorage.getItem('ACCESS_TOKEN');
+    
     config.headers.X-Api-Key = token;
     return config;
 });
